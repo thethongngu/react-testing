@@ -7,7 +7,7 @@ export function HomePage(props) {
     const [ articleItems, setArticleItems ] = useState([]);
     console.log(props.newsData);
     useEffect(() => {
-        setArticleItems(props.newsData.slice(0, 10).map((itemData, id) => {
+        setArticleItems(props.newsData.map((itemData, id) => {
             return (
                 <li>
                     <ArticleCard key={id} articleData={itemData}/>
