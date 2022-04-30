@@ -1,0 +1,74 @@
+.card {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+    height: 326px;
+    overflow: hidden;
+}
+
+.card > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+    margin: 0;
+}
+
+.card > figure > img {
+    width: 100%;
+}
+
+.card > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    height: 58px;
+    width: 100%;
+}
+
+.card > figure > figcaption > h3 {
+    color: white;
+    padding: .6rem;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card  > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: #666666;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding-top: 6px;
+}
+
+.card > .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date {
+    margin: 0;
+    padding-left: .75rem;
+    padding-top: .4rem;
+}
+
+.source {
+    margin: 0;
+    padding-right: 1rem;
+    padding-top: .4rem;
+}

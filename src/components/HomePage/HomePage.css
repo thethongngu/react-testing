@@ -1,0 +1,14 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    list-style-type: none;
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    font-size: 3rem;
+    height: auto;
+    padding: 20px;
+}
