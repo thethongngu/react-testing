@@ -2,9 +2,7 @@ import './App.css'
 import React, { useState, useEffect } from 'react';
 import { fetchAllNews } from '../../utility';
 import { STATUS_FETCHING, STATUS_FETCH_FAIL, STATUS_FETCH_SUCCESS } from '../../constant';
-import { Route, Routes } from 'react-router-dom';
 import { HomePage } from '../HomePage/HomePage';
-import { ArticlePage } from '../ArticlePage/ArticlePage';
 
 function App() {
 
@@ -25,18 +23,23 @@ function App() {
       });
   }, []);
 
+  function getMainPage() {
+    if (fetchStatus === STATUS_FETCH_SUCCESS) {
+      return <HomePage newsData={newsData}/>;
+    } else if (fetchStatus === STATUS_FETCH_FAIL) {
+      return <p> Cannot get data from server </p>
+    } else {
+      return <p> Contacting journalist... </p>
+    }
+  }
+
   return (
     <div className="app">
       <header className="app-header">
         News
       </header>
       <main>
-        <Routes>
-          <Route path="/" element={<HomePage newsData={newsData}/>} />
-          <Route path="article" element={<ArticlePage newsData={newsData} articleId={0} />} >
-            <Route path=":articleId" element={<ArticlePage newsData={newsData} articleId={0} />} />
-          </Route>
-        </Routes>
+        {getMainPage()}
       </main>
     </div>
   );
