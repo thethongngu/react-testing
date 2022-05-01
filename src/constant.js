@@ -1,3 +1,5 @@
+export const NEWS_API = 'https://saurav.tech/NewsAPI/everything/cnn.json';
+
 export const ERROR_RESPONSE_DATA = 1000;;
 
 export const STATUS_FETCHING = 2000;
