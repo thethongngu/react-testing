@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        Title here
+        News
       </header>
       <main>
         <Routes>

@@ -1,8 +1,9 @@
 .card {
     border: 1px solid #E2E2E2;
     border-radius: .5rem;
-    height: 326px;
+    height: 310px;
     overflow: hidden;
+    min-height: 330px;
 }
 
 .card > figure {
@@ -22,7 +23,7 @@
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,.7);
-    height: 58px;
+    height: 30%;
     width: 100%;
 }
 
@@ -42,17 +43,18 @@
 .card  > p {
     font-size: 1rem;
     line-height: 1.5;
-    padding: 1rem .75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     color: #666666;
     margin-bottom: 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
-    white-space: normal;
+    overflow: hidden; 
     text-overflow: ellipsis;
     margin: 0;
     padding-top: 6px;
+    
 }
 
 .card > .info {

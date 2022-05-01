@@ -5,7 +5,7 @@ export function ArticleCard(props) {
     return (
         <div className='card'>
             <figure>
-                <img src={props.articleData.urlToImage} />
+                <img src={props.articleData.urlToImage} alt='Source not found'/>
                 <figcaption>
                     <h3>{props.articleData.title}</h3>
                 </figcaption>
